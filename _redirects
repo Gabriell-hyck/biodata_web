@@ -1,0 +1,11 @@
+# Netlify redirects file
+# Force HTTPS
+http://yourwebsite.com/* https://yourwebsite.com/:splat 301!
+http://www.yourwebsite.com/* https://www.yourwebsite.com/:splat 301!
+
+# Redirect root domain to www
+https://yourwebsite.com/* https://www.yourwebsite.com/:splat 301!
+
+# Single Page Application routing (if needed)
+/*    /index.html   200
+

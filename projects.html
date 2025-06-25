@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel - Projek ku" href="styles.css">
+    <style>
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,212,255,0.2);
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .project-title {
+            color: #00D4FF;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-status {
+            background: #00FF88;
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .project-tech {
+            display: flex;
+            gap: 10px;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .tech-tag {
+            background: #0066CC;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        
+        .project-links {
+            margin-top: 1rem;
+        }
+        
+        .project-btn {
+            background: linear-gradient(135deg, #00D4FF 0%, #0066CC 100%);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .coming-soon {
+            opacity: 0.7;
+            border: 2px dashed #00D4FF;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Gabriel</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="projects.html">eebz-project</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Projek Admin yang ganteng ini ygy</h2>
+                <p>Ayok liat apa aja yang admin lakukan akhir akhir ini!</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>beberapa projek</h2>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Website pertama admin nih</h3>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <p>Website pertama yang aku buat bersama ai menggunakan HTML, CSS, dan JavaScript.</p>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Desain yang dinamis</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="index.html" class="project-btn">Liat Websitenya</a>
+                        <a href="#" class="project-btn">perintah masih dalam pengembangan!</a>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Sensor Gas berbasis Arduino</h3>
+                        <span class="project-status">Dalam pembangunan</span>
+                    </div>
+                    <p>Sensor Gas berbasis iot yang kubuat ini berfungsi untuk memonitoring kebocoran Gas yang ada di rumah tangga melalui sensor yang bernama mq2.</p>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Sensor mq2</span>
+                        <span class="tech-tag">integrasi web</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-btn">segera hadir guys!</a>
+                    </div>
+                </div>
+
+                <div class="project-card coming-soon">
+                    <h3 class="project-title">beberapa projek admin bakal datang!</h3>
+                    <p>Kedepannya Admin bakal bagi bagi projek geratis. Stay tuned untuk update proyek terbaru Admin!</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Iot</span>
+                        <span class="tech-tag">Web</span>
+                        <span class="tech-tag">Projek Gabut</span>
+                        <span class="tech-tag">Raspberry</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Pencapaian Admin di umur segini?</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>🏆 Website Pertama Admin!</h3>
+                        <p>Website pertamaku yang kubuat menggunakan visual studio dan dibantu oleh warp ai</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🐍 Belajar Python sederhana</h3>
+                        <p>Admin membuat beberapa script sederhana menggunakan python, mungkin bakal admin tunjukkin deh</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔧 Projek Iot(Internet Of Thing</h3>
+                        <p>Admin sukak membuat projek projek iot berbasis Arduino, ESP, dan Raspi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Admin Gabriel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
